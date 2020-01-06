@@ -1,0 +1,131 @@
+
+/* comfortaa-regular - cyrillic */
+
+*{
+    text-decoration: none;
+}
+@font-face {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/comfortaa-v27-cyrillic-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+    url('../fonts/comfortaa-v27-cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/comfortaa-v27-cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/comfortaa-v27-cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/comfortaa-v27-cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/comfortaa-v27-cyrillic-regular.svg#Comfortaa') format('svg'); /* Legacy iOS */
+}
+/* comfortaa-500 - cyrillic */
+@font-face {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/comfortaa-v27-cyrillic-500.eot'); /* IE9 Compat Modes */
+    src: local(''),
+    url('../fonts/comfortaa-v27-cyrillic-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/comfortaa-v27-cyrillic-500.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/comfortaa-v27-cyrillic-500.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/comfortaa-v27-cyrillic-500.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/comfortaa-v27-cyrillic-500.svg#Comfortaa') format('svg'); /* Legacy iOS */
+}
+/* comfortaa-700 - cyrillic */
+@font-face {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/comfortaa-v27-cyrillic-700.eot'); /* IE9 Compat Modes */
+    src: local(''),
+    url('../fonts/comfortaa-v27-cyrillic-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/comfortaa-v27-cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/comfortaa-v27-cyrillic-700.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/comfortaa-v27-cyrillic-700.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/comfortaa-v27-cyrillic-700.svg#Comfortaa') format('svg'); /* Legacy iOS */
+}
+html{
+    box-sizing: border-box;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: black;
+}
+
+.wrapper{
+    max-width: 1060px;
+    margin: 0 auto;
+}
+/*header starts*/
+.header{
+
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+
+}
+
+.header_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top:56px;
+}
+.header_list{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.header_item{
+    margin-right: 55px;
+}
+.header_item:last-child{
+    margin-right: 0;
+}
+.header_link{
+    font-size: 18px;
+    line-height: 24px;
+    color: white;
+    text-decoration: none;
+}
+.header_link:hover,.header_link:focus, .header_link:active{
+    opacity: .5;
+    transition: .3s ease;
+}
+.header_nav li ul{
+    position: absolute;
+    min-width: 150px;
+    display:none;
+}
+.header_submenu {
+    padding: 10px;
+    text-transform: none;
+    background: dimgrey;
+    opacity: .75;
+    line-height: 1.7;
+}
+.header_submenu a{
+    color:white;
+}
+.header_submenu a:hover{
+    color:#16220C;
+    font-style: normal;
+
+}
+.header_nav li:hover >ul{
+    display:block;
+}
+.intro{
+    min-height: 100vh;
+    background: url("../img/centrfons.jpg") no-repeat center;
+    background-size: cover;
+    padding-top: 274px;
+}
